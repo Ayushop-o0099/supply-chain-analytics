@@ -1,0 +1,7 @@
+{
+  "name": "Shipment Analytics",
+  "dataColors": ["#15998B", "#4865AD", "#DE9141", "#965F91", "#507D91", "#B5C9CB"],
+  "background": "#EEF3F5",
+  "foreground": "#172C3C",
+  "tableAccent": "#15998B"
+}

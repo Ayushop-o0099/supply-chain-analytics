@@ -1,0 +1,24 @@
+// Create these measures on the Shipments table after importing the curated CSV.
+Total Shipments = COUNTROWS(Shipments)
+
+Delivered Shipments = CALCULATE(COUNTROWS(Shipments), Shipments[status] = "Delivered")
+
+Delayed Shipments = CALCULATE(COUNTROWS(Shipments), Shipments[status] = "Delivered", Shipments[is_delayed] = 1)
+
+On-Time Shipments = [Delivered Shipments] - [Delayed Shipments]
+
+On-Time Rate = DIVIDE([On-Time Shipments], [Delivered Shipments])
+
+Delay Rate = DIVIDE([Delayed Shipments], [Delivered Shipments])
+
+Mean Delay Hours = CALCULATE(AVERAGE(Shipments[delay_hours]), Shipments[status] = "Delivered")
+
+Mean Transit Hours = CALCULATE(AVERAGE(Shipments[transit_hours]), Shipments[status] = "Delivered")
+
+Overdue Open = CALCULATE(COUNTROWS(Shipments), Shipments[is_overdue_open] = 1)
+
+Shipping Cost USD = SUM(Shipments[shipping_cost_usd])
+
+Scored Shipments = COUNTROWS(Predictions)
+
+Flagged Shipments = CALCULATE(COUNTROWS(Predictions), Predictions[predicted_delayed] = 1)

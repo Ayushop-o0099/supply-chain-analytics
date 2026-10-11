@@ -1,0 +1,10 @@
+pandas>=2.2,<4
+numpy>=1.26,<3
+SQLAlchemy>=2.0,<3
+PyMySQL>=1.1,<2
+scikit-learn>=1.5,<2
+matplotlib>=3.8,<4
+seaborn>=0.13,<1
+joblib>=1.4,<2
+python-dotenv>=1.0,<2
+pytest>=8,<10

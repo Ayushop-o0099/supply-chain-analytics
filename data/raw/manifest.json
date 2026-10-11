@@ -1,0 +1,29 @@
+{
+  "synthetic": true,
+  "seed": 42,
+  "as_of_utc": "2026-01-01 00:00:00",
+  "valid_shipments": 20000,
+  "deliberate_invalid_rows": 100,
+  "files": {
+    "carriers": {
+      "rows": 6,
+      "sha256": "6b0102bec3ae37fbdf8deb33de3a79673989c273584ca79e33888fbbf9e32b7a"
+    },
+    "ports": {
+      "rows": 8,
+      "sha256": "a204328cecdd1512a60fe8b309cdc2b0c631e266b1d02aef0f5f50b4fc985777"
+    },
+    "routes": {
+      "rows": 24,
+      "sha256": "0b8339a0a19514d0e47593261f0955a48dbee6084747d22ac482df429aac762e"
+    },
+    "shipments": {
+      "rows": 20100,
+      "sha256": "65b0943f4e281ec11f7a3c992267a6820f7133365e49c7e2234116d345340e73"
+    },
+    "shipment_events": {
+      "rows": 78282,
+      "sha256": "c3506b1c22d9af2d35c46bdab4d5322ad38a736630345f73eeb1baa37ef13205"
+    }
+  }
+}

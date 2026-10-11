@@ -1,0 +1,12 @@
+{
+  "total_shipments": 20000,
+  "delivered_shipments": 19223,
+  "delayed_shipments": 5397,
+  "on_time_rate": 0.719242573999896,
+  "mean_delay_hours_delivered": 10.139633761639702,
+  "overdue_open": 17,
+  "cancelled_shipments": 292,
+  "total_shipping_cost_usd": 18290136.33,
+  "as_of_utc": "2026-01-01 00:00:00",
+  "synthetic": true
+}

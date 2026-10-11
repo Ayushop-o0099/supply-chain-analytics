@@ -1,0 +1,16 @@
+.venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+*.pyc
+data/*.db
+models/*.joblib
+logs/
+SupplyChainAnalytics.zip
+*.db-journal
+*.db-wal
+*.db-shm
+.DS_Store
+Thumbs.db

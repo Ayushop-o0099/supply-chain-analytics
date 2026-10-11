@@ -1,0 +1,88 @@
+{
+  "synthetic": true,
+  "selected_model": "logistic_regression",
+  "model_version": "logistic_regression-f9b556c692",
+  "threshold": 0.25,
+  "validation_candidates": {
+    "dummy": {
+      "threshold": 0.15,
+      "precision": 0.29848966613672495,
+      "recall": 1.0,
+      "f1": 0.45974900520355066,
+      "roc_auc": 0.5,
+      "average_precision": 0.29848966613672495,
+      "confusion_matrix": [
+        [
+          0,
+          1765
+        ],
+        [
+          0,
+          751
+        ]
+      ]
+    },
+    "logistic_regression": {
+      "threshold": 0.25,
+      "precision": 0.4519774011299435,
+      "recall": 0.7456724367509987,
+      "f1": 0.5628140703517588,
+      "roc_auc": 0.7416928514577353,
+      "average_precision": 0.5542263116560394,
+      "confusion_matrix": [
+        [
+          1086,
+          679
+        ],
+        [
+          191,
+          560
+        ]
+      ]
+    },
+    "random_forest": {
+      "threshold": 0.25,
+      "precision": 0.4286786786786787,
+      "recall": 0.7603195739014648,
+      "f1": 0.5482477196351416,
+      "roc_auc": 0.7297303312297484,
+      "average_precision": 0.5382199601306742,
+      "confusion_matrix": [
+        [
+          1004,
+          761
+        ],
+        [
+          180,
+          571
+        ]
+      ]
+    }
+  },
+  "test_metrics": {
+    "precision": 0.4175824175824176,
+    "recall": 0.7569721115537849,
+    "f1": 0.5382436260623229,
+    "roc_auc": 0.7098435526187932,
+    "average_precision": 0.5159979251113178,
+    "confusion_matrix": [
+      [
+        927,
+        795
+      ],
+      [
+        183,
+        570
+      ]
+    ]
+  },
+  "split_rows": {
+    "train": 13336,
+    "validation": 2516,
+    "test": 2475
+  },
+  "validation_start": "2025-05-22 21:19:03",
+  "test_start": "2025-09-10 14:14:40",
+  "selection": "Highest validation F1 after validation-only threshold tuning; one test evaluation.",
+  "limitations": "Synthetic data. Delivered-only test outcomes exclude unresolved shipments; recent cohorts are censored. Model scores are not calibrated operational probabilities."
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "6e28fc3f-74c0-48de-98e5-033e3d08c4a2",
+  "input_shipments": 20100,
+  "accepted_shipments": 20000,
+  "rejected_shipments": 100,
+  "accepted_events": 78282,
+  "rejected_events": 0,
+  "as_of_utc": "2026-01-01 00:00:00",
+  "synthetic": true,
+  "rejection_reasons": {
+    "duplicate shipment_id": 20,
+    "nonpositive weight": 20,
+    "unknown carrier": 20,
+    "promise before dispatch": 20,
+    "delivery before dispatch": 20
+  }
+}
