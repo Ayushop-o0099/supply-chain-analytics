@@ -3,3 +3,9 @@
 *.sh text eol=lf
 *.png binary
 *.pbix binary
+
+# Exclude the generated report with embedded data from language statistics.
+reports/dashboard.html linguist-generated=true
+
+# Include SQL source files in GitHub's language statistics.
+*.sql linguist-detectable=true
